@@ -3,13 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SoundViewer — Transcripción sincronizada con el audio</title>
+    <meta
+      name="description"
+      content="Reproductor que sincroniza una transcripción con marcas de tiempo con su archivo de audio sobre el visualizador de la onda: resaltado palabra a palabra, tabla de reparto, pausa automática y edición del guion. Todo en el navegador, sin subir nada a ningún servidor."
+    />
+    <meta
+      name="keywords"
+      content="transcripción sincronizada, reproductor de audio, forma de onda, waveform, subtítulos, guion, doblaje, whisper, marcas de tiempo, karaoke de texto"
+    />
+    <meta name="author" content="RNAmaya" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="color-scheme" content="dark light" />
+    <meta
+      name="theme-color"
+      content="#0a0a0a"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <link rel="canonical" href="https://soundviewer.itsren.me/" />
+
+    <link rel="icon" type="image/webp" href="/profile.webp" />
+    <link rel="apple-touch-icon" href="/profile.webp" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SoundViewer" />
+    <meta property="og:locale" content="es_ES" />
+    <meta
+      property="og:title"
+      content="SoundViewer — Transcripción sincronizada con el audio"
+    />
+    <meta
+      property="og:description"
+      content="Sincroniza una transcripción con marcas de tiempo con su audio sobre la onda completa del sonido: resaltado palabra a palabra, reparto, pausa automática y edición del guion. Sin servidores."
+    />
+    <meta property="og:url" content="https://soundviewer.itsren.me/" />
+    <meta
+      property="og:image"
+      content="https://soundviewer.itsren.me/profile.webp"
+    />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="735" />
+    <meta property="og:image:height" content="548" />
+    <meta
+      property="og:image:alt"
+      content="SoundViewer: transcripción resaltada sobre la onda de audio"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="SoundViewer — Transcripción sincronizada con el audio"
+    />
+    <meta
+      name="twitter:description"
+      content="Sincroniza una transcripción con marcas de tiempo con su audio sobre la onda completa del sonido. Todo ocurre en el navegador."
+    />
+    <meta
+      name="twitter:image"
+      content="https://soundviewer.itsren.me/profile.webp"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="SoundViewer: transcripción resaltada sobre la onda de audio"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>SoundViewer</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SoundViewer",
+        "url": "https://soundviewer.itsren.me/",
+        "image": "https://soundviewer.itsren.me/profile.webp",
+        "description": "Reproductor que sincroniza una transcripción con marcas de tiempo con su archivo de audio sobre el visualizador de la onda del sonido, con resaltado palabra a palabra, tabla de reparto y edición de la transcripción. Funciona íntegramente en el navegador.",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Cualquiera con navegador web",
+        "browserRequirements": "Requiere JavaScript y Web Audio API",
+        "inLanguage": "es",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+        "author": { "@type": "Person", "name": "RNAmaya" },
+        "featureList": [
+          "Resaltado de la transcripción palabra a palabra",
+          "Visualizador de la onda completa del audio",
+          "Tabla de reparto con próxima intervención",
+          "Pausa automática entre escenas y en los silencios",
+          "Edición y exportación de la transcripción en Markdown",
+          "Ajuste de desfase entre texto y audio",
+          "Procesamiento local: no se sube nada a ningún servidor"
+        ]
+      }
+    </script>
   </head>
-  
+
   <body class="antialiased">
     <div id="root"></div>
+    <noscript>
+      <h1>SoundViewer</h1>
+      <p>
+        SoundViewer sincroniza una transcripción con marcas de tiempo con su
+        archivo de audio sobre un visualizador de la onda del sonido. Necesita
+        JavaScript activado para funcionar.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
