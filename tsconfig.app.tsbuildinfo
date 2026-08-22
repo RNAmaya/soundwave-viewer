@@ -1,1 +1,36 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/casttable.tsx","./src/components/controls.tsx","./src/components/cueeditor.tsx","./src/components/cuerow.tsx","./src/components/dropzone.tsx","./src/components/nowplaying.tsx","./src/components/richtext.tsx","./src/components/settingsmenu.tsx","./src/components/speakermark.tsx","./src/components/transcript.tsx","./src/components/volumebar.tsx","./src/components/waveform.tsx","./src/components/ui/select.tsx","./src/hooks/useaudioengine.ts","./src/hooks/usetheme.ts","./src/lib/colors.ts","./src/lib/edittranscript.ts","./src/lib/motion.ts","./src/lib/parsemarkdown.ts","./src/lib/parsetranscript.ts","./src/lib/parsewhisper.ts","./src/lib/peaks.ts","./src/lib/serializemarkdown.ts","./src/lib/silence.ts","./src/lib/storage.ts","./src/lib/text.ts","./src/lib/time.ts"],"version":"5.7.3"}
+{
+  "root": [
+    "./src/app.tsx",
+    "./src/main.tsx",
+    "./src/types.ts",
+    "./src/vite-env.d.ts",
+    "./src/components/casttable.tsx",
+    "./src/components/controls.tsx",
+    "./src/components/cueeditor.tsx",
+    "./src/components/cuerow.tsx",
+    "./src/components/dropzone.tsx",
+    "./src/components/nowplaying.tsx",
+    "./src/components/richtext.tsx",
+    "./src/components/settingsmenu.tsx",
+    "./src/components/speakermark.tsx",
+    "./src/components/transcript.tsx",
+    "./src/components/volumebar.tsx",
+    "./src/components/waveform.tsx",
+    "./src/components/ui/select.tsx",
+    "./src/hooks/useaudioengine.ts",
+    "./src/hooks/usetheme.ts",
+    "./src/lib/colors.ts",
+    "./src/lib/edittranscript.ts",
+    "./src/lib/motion.ts",
+    "./src/lib/parsemarkdown.ts",
+    "./src/lib/parsetranscript.ts",
+    "./src/lib/parsewhisper.ts",
+    "./src/lib/peaks.ts",
+    "./src/lib/serializemarkdown.ts",
+    "./src/lib/silence.ts",
+    "./src/lib/storage.ts",
+    "./src/lib/text.ts",
+    "./src/lib/time.ts"
+  ],
+  "version": "5.7.3"
+}
