@@ -181,7 +181,22 @@ src/
                  Controls · VolumeBar · SettingsMenu · SpeakerMark · DropZone
   components/ui/ Select propio
   styles/        global.css — tokens del sistema de diseño
-  App.tsx        estado, sincronía, pausa automática, atajos y drag & drop
+  pages/         PlayerPage (toda la app) · NotFoundPage
+  App.tsx        rutas (react-router-dom)
+  main.tsx       BrowserRouter con basename = import.meta.env.BASE_URL
 ```
+
+## Despliegue
+
+`npm run build` genera estáticos en `dist/`; no hace falta backend.
+
+- **En la raíz de un dominio**: sin más, `npm run build`.
+- **En una subruta** (por ejemplo `midominio.com/soundwave/`): define la variable de entorno de build
+  `VITE_BASE_PATH=/soundwave/`. Con eso Vite escribe los assets como `/soundwave/assets/…` y el router usa
+  `basename=/soundwave`, así que ambos cuadran. Si el proxy recorta el prefijo (*strip path*), el contenedor
+  recibe `/assets/…` y lo sirve igual.
+
+El servidor lo pone la plataforma: Railpack (Dokploy/Railway) detecta el sitio estático de Vite y lo sirve
+con Caddy en `$PORT` (80 por defecto) desde `dist/`.
 
 El código va sin comentarios: la explicación de cada decisión está en este README.
